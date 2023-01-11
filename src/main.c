@@ -4,11 +4,9 @@ int main() {
     screenSetUp();
 
     int ch;
-    int cnt = 0;
 
     while((ch = getch()) != 'q') {
-        mvprintw(cnt, cnt, "@");
-        cnt++;
+        drawLeftBar();
     }
 
     endwin();
